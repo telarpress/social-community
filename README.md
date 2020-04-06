@@ -2,7 +2,7 @@
 Social Network Community page
 
 
-### DirectoryStructure 
+### Directory Structure 
     root-directory
     ├── ui
     │   ├── src
