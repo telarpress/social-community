@@ -30,7 +30,7 @@ Social Network Community page
     │   │   │   │   │   ├── entityName2 //(entity service)
     │   │   │   │   │   └── ...
     │   │   │   │   └── ...
-    │   │   ├── sotre
+    │   │   ├── store
     │   │   │   ├── actions
     │   │   │   ├── reducers
     │   │   │   └── sagas
