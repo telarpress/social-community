@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { Component } from \"react\";\n\nclass ChatComponent extends Component {\n  render() {\n    return __jsx(\"div\", null);\n  }\n\n}\n\nexport default ChatComponent;","map":null,"metadata":{},"sourceType":"module"}
