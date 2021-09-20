@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const CoverStyles = theme => ({});","map":{"version":3,"sources":["/home/milad/Telar/social-community/ui/src/components/cover/coverStyles.tsx"],"names":["CoverStyles","theme"],"mappings":"AAAA,OAAO,MAAMA,WAAW,GAAIC,KAAD,KAAiB,EAAjB,CAApB","sourcesContent":["export const CoverStyles = (theme: any) => ({\n\n\n\n\n})"]},"metadata":{},"sourceType":"module"}

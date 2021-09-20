@@ -11,12 +11,15 @@ class Home extends Component<Props>{
         super(props)
     }
     render() {
+        
+      
         return (
             <div>
                 <Head>
-                    <title>Read Sokcial</title>
+                    <title>bead Sokcial</title>
                 </Head>
                 <HomeComponent posts={this.props.posts} users={this.props.users} />
+                
             </div>
         )
     }

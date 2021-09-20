@@ -4,7 +4,7 @@ export const homeStyle = (theme: any) => ({
     root: {
         zIndex: 1,
         overflow: 'visible',
-        backgroundColor: '#fafafa',
+
     },
     main:{
         zIndex: 1,

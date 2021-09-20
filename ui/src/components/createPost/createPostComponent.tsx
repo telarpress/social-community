@@ -1,14 +1,15 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import Divider from "@material-ui/core/Divider";
 import CardContent from "@material-ui/core/CardContent";
 import Avatar from "@material-ui/core/Avatar";
+
 import Typography from "@material-ui/core/Typography";
-import {CreatePostState} from "./createPostState";
-import {CreatePostProps} from "./createPostProps"
-import  {CreatePostStyle} from "./createPostStyle";
-import {withStyles} from "@material-ui/core/styles";
+import { CreatePostState } from "./createPostState";
+import { CreatePostProps } from "./createPostProps"
+import { CreatePostStyle } from "./createPostStyle";
+import { withStyles } from "@material-ui/core/styles";
 import Faker from 'faker';
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -24,12 +25,14 @@ import Fab from "@material-ui/core/Fab";
 import AddPhotoAlternateIcon from "@material-ui/icons/AddPhotoAlternate";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import Button from "@material-ui/core/Button";
-class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
-    constructor(props:CreatePostProps) {
+import PermMediaIcon from '@material-ui/icons/PermMedia';
+import PollIcon from '@material-ui/icons/Poll';
+class CreatePostComponent extends Component<CreatePostProps, CreatePostState>{
+    constructor(props: CreatePostProps) {
         super(props);
         this.state = {
-            openDialog:false,
-            anchorEl:null,
+            openDialog: false,
+            anchorEl: null,
             mainState: "initial", // initial, search, gallery, uploaded
             imageUploaded: 0,
             selectedFile: null,
@@ -42,11 +45,11 @@ class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
         this.setState({ openDialog: !this.state.openDialog })
     }
     handleToggleVideo = () => {
-        this.setState({ openVideoDialog:! this.state.openVideoDialog })
+        this.setState({ openVideoDialog: !this.state.openVideoDialog })
     }
     handleToggleMorePost = () => {
 
-        this.setState({ openMorePostDialog:! this.state.openMorePostDialog })
+        this.setState({ openMorePostDialog: !this.state.openMorePostDialog })
     }
     handleClose = (message) => () => {
         this.setState({ anchorEl: null });
@@ -57,17 +60,17 @@ class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
 
     }
     handleCloseVideo = () => {
-        this.setState({ openVideoDialog:! this.state.openVideoDialog })
+        this.setState({ openVideoDialog: !this.state.openVideoDialog })
     }
-    render(){
-        const {classes, theme} = this.props;
+    render() {
+        const { classes, theme } = this.props;
         // @ts-ignore
         const postDialog = (
-            <Dialog open={this.state.openDialog}   onClose={this.handleClose} aria-labelledby="form-dialog-title">
-                <div style={{width: 500}}>
+            <Dialog open={this.state.openDialog} onClose={this.handleClose} aria-labelledby="form-dialog-title">
+                <div style={{   }}>
                     <DialogContent>
                         <DialogTitle id="form-dialog-title">Comment</DialogTitle>
-                        <IconButton  style={{float:'right',marginTop:'-52px'}} onClick={() => this.handleToggleMorePost()}>  <MoreIcon  />
+                        <IconButton style={{ float: 'right', marginTop: '-52px' }} onClick={() => this.handleToggleMorePost()}>  <MoreIcon />
                         </IconButton>
                         <Popover
                             open={this.state.openMorePostDialog}
@@ -127,8 +130,8 @@ class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
             </Dialog>
         );
         const addVideo = (
-            <Dialog open={this.state.openVideoDialog}   onClose={this.handleToggleVideo} aria-labelledby="form-dialog-title">
-                <div style={{width: 290}}>
+            <Dialog open={this.state.openVideoDialog} onClose={this.handleToggleVideo} aria-labelledby="form-dialog-title">
+                <div style={{ width: 290 }}>
                     <DialogContent>
                         <DialogTitle id="form-dialog-title"> Add Video Link  </DialogTitle>
                         <TextField
@@ -156,17 +159,11 @@ class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
         )
         return (
             <div>
-                <Card   onClick={() => this.handleClickToggle()}>
-                    <CardHeader
-                        subheader="Create Post"
-                    >
-                    </CardHeader>
+                <Card onClick={() => this.handleClickToggle()}>
                     <Divider variant="inset" className={classes.divider} component="li" />
-                    <CardContent  >
+                    <CardContent style={{ borderBottom: '1px solid #eee' }} >
                         <Avatar
-                            src={
-                                Faker.internet.avatar()
-                            }
+                            src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.30497-1/cp0/p40x40/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=8eywajsP12oAX8CUhJz&_nc_ht=scontent-amt2-1.xx&oh=e6750e0aeade4bc0c935ec38e57c39bc&oe=615529A3"
                         />
                         <Typography
                             className={classes.typographyHeading}
@@ -177,6 +174,17 @@ class CreatePostComponent extends Component<CreatePostProps,CreatePostState>{
                         </Typography>
 
                     </CardContent>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <IconButton onClick={() => this.handleToggleMorePost()}>
+                            <VideoCallIcon style={{ color: '#F02849', fontSize: '30px' }} />
+                        </IconButton>
+                        <IconButton onClick={() => this.handleToggleMorePost()} style={{
+                            marginRight: '184px',
+                            marginLeft: '184px'
+                        }}>
+                            <PermMediaIcon style={{ color: '#41B35D' }} />
+                        </IconButton>
+                    </div>
                 </Card>
                 {postDialog}
                 {addVideo}

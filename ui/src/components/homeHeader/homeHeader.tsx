@@ -61,7 +61,10 @@ class HomeHeader extends Component<HomeHeaderProps,HomeHeaderState>{
             render(){
                 const {classes, theme} = this.props
                 const { anchorEl } = this.state;
+                const styles = {
 
+                    
+                }
                 const popoverAccount = (
 
                     <Popover
@@ -98,7 +101,7 @@ class HomeHeader extends Component<HomeHeaderProps,HomeHeaderState>{
 
                     <div>
 
-                        <AppBar position="static" className={classes.header}  >
+                        <AppBar position="static" className='profile_header'  >
                             <Toolbar>
                                 {/*<IconButton*/}
                                 {/*    edge="start"*/}
@@ -110,7 +113,7 @@ class HomeHeader extends Component<HomeHeaderProps,HomeHeaderState>{
                                 {/*    <MenuIcon />*/}
                                 {/*</IconButton>*/}
                                 <div className={classes.drawerHeader} >
-                                    <TextLogo viewBox='0 00 100 60' className={classes.logo}/>
+                                    <TextLogo viewBox='0 00 100 60' className='profile_header_logo'/>
                                 </div>
                                 <MenuList style={{ color: 'rgb(117, 117, 117)', width: '113px', paddingTop: '0px' }}>
                                     <div className={classes.homeTitle}>

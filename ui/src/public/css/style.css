@@ -1,13 +1,121 @@
 body {
-    background-color: #fafafa;
+    background-color: #F0F2F5;
+    overflow-x: hidden;
 }
 @media only screen and (max-width : 768px) {
     .userInfo{
-        margin-left:0px !important;
+        margin-left:27px !important;
     }
-}
-@media only screen and (min-width : 768px) {
     .userInfo{
-        margin-left: 133px !important;
-    }
+        display:none !important;
+     } 
+}
+@media only screen and (min-width : 900px) {
+    
+}
+.userInfo{
+    margin-left:27px !important;
+}
+.profile_header{
+    background:#5b5958 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+.profile_header_logo {
+    fill: currentColor !important;
+    width: 100% !important;
+    height: 2em !important;
+    display: inline-block !important;
+    font-size: 17px !important;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+    user-select: none !important;
+    flex-shrink: 0 !important
+} 
+.profile_header_home_title{
+    color: #fff !important;
+    margin-top: 5px !important;
+    left :  -9% !important;
+    border-left-color: #fff !important;
+    border-left : 1px solid #fff !important;
+    padding-left :  24px !important;
+}
+ .MuiPaper-root {
+    border-right : 0px !important;
+}
+.MuiDivider-root{
+    background-color:#fff !important;
+    background-image: linear-gradient(to top , #fff ,rgba(255, 255, 255,9) ,rgba(255, 255, 255,.7), rgba(255, 255, 255,.4),rgba(255, 255, 255,0));
+}
+.MuiTab-wrapper{
+    font-weight: bold;
+}
+.MuiAppBar-colorDefaul{
+    background-color:#fff !important;
+}
+.MuiPaper-elevation4{
+    box-shadow: none !important;
+}
+
+@media only screen and (min-width : 600px) {
+  
+.MuiTab-root{
+    min-width: 115px !important;
+}
+}
+
+.MuiIconButton-root{
+    border-radius: 5px !important;
+}
+.MuiFilledInput-underline::before{
+    border-bottom: 0px !important;
+}
+.MuiFilledInput-underline::after{
+    border-bottom: 0px !important;
+}
+
+ .MuiFilledInput-multiline{
+    padding:  11px 11px 10px !important  ;
+    border-radius:18px; 
+}
+
+.MuiInputBase-fullWidth {
+    width: 95%;
+}
+.MuiFilledInput-root{
+    border-top-left-radius: 18px !important;
+border-top-right-radius: 18px !important;
+}
+.MuiImageListItem-item{
+    border-radius: 9px ;
+  
+}
+.MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 30% !important;
+    flex-basis: 28% !important;
+}
+.MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667% !important; 
+    flex-basis: 36.667% !important;
+}
+.homeComponent-content-21{
+    margin-top: -29px !important;
+}
+.userInfo{
+    margin-top: -29px !important;   
+}
+#scrollable-auto-tabpanel-0{
+    background: #F0F2F5;
+}
+.MuiTabs-scroller{
+    margin-top: -17px !important;   
+    margin-left: 65px;
+}
+.MuiTabs-root{
+    min-height: 41px !important;
+}
+.profileInfo{
+    padding-left: 42px;   
 }

@@ -7,9 +7,13 @@ export const CreatePostStyle = (theme: any) => ({
         color:'#000'
     },
     typographyHeading:{
-        width: '50%',
-        textAlign: 'center',
-        marginTop:'-29px'
+        width: '89%',
+        textAlign: 'left',
+        marginTop:'-39px',
+        background: '#E4E6E9',
+        padding: '10px' ,
+        borderRadius:' 100px',
+        marginLeft: '50px'
     },
     addVideo:{
 
