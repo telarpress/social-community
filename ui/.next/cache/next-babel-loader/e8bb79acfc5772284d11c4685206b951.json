@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const createfetchPostRequest = () => {};","map":{"version":3,"sources":["G:/wamp/www/react-social-network/ui/src/api/postApi.ts"],"names":["createfetchPostRequest"],"mappings":"AAAA,OAAO,MAAMA,sBAAsB,GAAG,MAAM,CAE3C,CAFM","sourcesContent":["export const createfetchPostRequest = () => {\r\n\r\n}"]},"metadata":{},"sourceType":"module"}

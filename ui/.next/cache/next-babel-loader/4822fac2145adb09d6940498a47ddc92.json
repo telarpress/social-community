@@ -1,0 +1,1 @@
+{"ast":null,"code":"const Home = () => {};\n\nexport default Home;","map":{"version":3,"sources":["G:/wamp64/www/react-social-network/ui/src/pages/home/index.tsx"],"names":["Home"],"mappings":"AAEA,MAAMA,IAAI,GAAG,MAAM,CAElB,CAFD;;AAIA,eAAeA,IAAf","sourcesContent":["\r\n\r\nconst Home = () => {\r\n\r\n}\r\n\r\nexport default Home;\r\n"]},"metadata":{},"sourceType":"module"}

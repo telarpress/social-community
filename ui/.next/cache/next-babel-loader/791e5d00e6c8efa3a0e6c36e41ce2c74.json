@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\nconst LoginComponent = () => {\n  return __jsx(\"div\", null);\n};\n\nexport default LoginComponent;","map":null,"metadata":{},"sourceType":"module"}
